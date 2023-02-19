@@ -1,10 +1,10 @@
 # manx-kat
-All my kattis solutions written in Java!
+[![manxkat.png](https://i.postimg.cc/5NgJBYV1/manxkat.png)](https://postimg.cc/KR1CFYjs)
 
 ## What is Kattis?
-[Kattis](https://open.kattis.com/) is a programming problem archive. Problems are categorised into easy, medium, and hard.
+[Kattis](https://open.kattis.com/) is a programming problem archive. Problems are categorised into easy, medium, and hard. In this repo you'll find all of the kata's I've completed using Java.
 
-## Completed Kata's
+## Completed Kata's (Java)
 |Problem            |Difficulty|
 | ----------------- | -------- |
 |[Jumbo Javelin](https://open.kattis.com/problems/jumbojavelin)     |Easy      |
