@@ -23,14 +23,16 @@ public class TequeTest {
     }
 
     @Test
-    public void givenTequeOfLengthEleven_whenAddMiddle_thenItemAddedAtIndexFour() {
+    public void givenTequeOfLengthEleven_whenAddMiddle_thenItemAddedAtIndexSix() {
         // GIVEN
         ArrayTeque<Integer> teque = new ArrayTeque<>();
+        teque.add(0);
         teque.add(1);
         teque.add(2);
         teque.add(3);
         teque.add(4);
-        teque.add(6);
+        teque.add(5);
+        
         teque.add(7);
         teque.add(8);
         teque.add(9);
@@ -39,10 +41,10 @@ public class TequeTest {
         teque.add(12);
 
         // WHEN
-        teque.addMiddle(5);
+        teque.addMiddle(6);
 
         // THEN
-        assertEquals(5, teque.toArray()[6]);
+        assertEquals(6, teque.toArray()[6]);
     }
 
 }

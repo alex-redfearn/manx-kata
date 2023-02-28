@@ -22,18 +22,26 @@ public class ArrayTeque<E> extends ArrayDeque<E> implements Teque<E> {
         @SuppressWarnings("unchecked")
         E[] elements = (E[]) this.toArray();
 
-        int middle = calculateMiddle();
-        addMiddle(Arrays.copyOf(elements, middle), e, Arrays.copyOfRange(elements, middle, this.size()));
-    }
+        int index = calculateMiddleIndex();
+        E[] array = shift(elements, index, 1);
+        array[index] = e;
 
-    private int calculateMiddle() {
-        return (this.size() + 1) / 2;
-    }
-
-    private void addMiddle(E[] start, E middle, E[] end) {
         this.clear();
-        this.addAll(new ArrayTeque<>(Arrays.asList(start)));
-        this.addLast(middle);
-        this.addAll(new ArrayTeque<>(Arrays.asList(end)));
+        this.addAll(new ArrayTeque<>(Arrays.asList(array)));
+    }
+
+    private int calculateMiddleIndex() {
+        return this.size() / 2;
+    }
+
+    private E[] shift(E[] array, int from, int offset) {
+        E[] result = increaseCapacity(array, offset);
+        System.arraycopy(result, from, result, from + offset, array.length - from);
+
+        return result;
+    }
+
+    private E[] increaseCapacity(E[] array, int increase) {
+        return Arrays.copyOf(array, this.size() + increase);
     }
 }
