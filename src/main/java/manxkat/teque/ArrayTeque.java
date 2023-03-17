@@ -1,47 +1,68 @@
 package manxkat.teque;
 
 import java.util.ArrayDeque;
-import java.util.Arrays;
-import java.util.Collection;
+import java.util.Iterator;
 
 public class ArrayTeque<E> extends ArrayDeque<E> implements Teque<E> {
 
+    private final ArrayDeque<E> arrayDeque;
+
     public ArrayTeque() {
         super();
-    }
-
-    public ArrayTeque(Collection<? extends E> c) {
-        super(c);
+        this.arrayDeque = new ArrayDeque<E>();
     }
 
     @Override
+    public int size() {
+        return super.size() + arrayDeque.size();
+    }
+
+    @Override
+    public void addFirst(E e) {
+        super.addFirst(e);
+
+        if (super.size() > this.arrayDeque.size() + 1) {
+            this.arrayDeque.addFirst(super.removeLast());
+        }
+    }
+
     public void addMiddle(E e) {
-        if (e == null)
-            throw new NullPointerException();
+        this.arrayDeque.addFirst(e);
 
-        @SuppressWarnings("unchecked")
-        E[] elements = (E[]) this.toArray();
-
-        int index = calculateMiddleIndex();
-        E[] array = shift(elements, index, 1);
-        array[index] = e;
-
-        this.clear();
-        this.addAll(new ArrayTeque<>(Arrays.asList(array)));
+        if (this.arrayDeque.size() > super.size()) {
+            super.addLast(this.arrayDeque.removeFirst());
+        }
     }
 
-    private int calculateMiddleIndex() {
-        return this.size() / 2;
+    @Override
+    public void addLast(E e) {
+        this.arrayDeque.addLast(e);
+
+        if (this.arrayDeque.size() > super.size()) {
+            super.addLast(this.arrayDeque.removeFirst());
+        }
     }
 
-    private E[] shift(E[] array, int from, int offset) {
-        E[] result = increaseCapacity(array, offset);
-        System.arraycopy(result, from, result, from + offset, array.length - from);
-
-        return result;
+    @Override
+    public E get(int index) {
+        if (index < super.size()) {
+            return iterateToIndex(super.iterator(), index);
+        } else {
+            return iterateToIndex(this.arrayDeque.iterator(), index - super.size());
+        }
     }
 
-    private E[] increaseCapacity(E[] array, int increase) {
-        return Arrays.copyOf(array, this.size() + increase);
+    private E iterateToIndex(Iterator<E> iterator, int index) {
+        int count = 0;
+        while (iterator.hasNext()) {
+            E e = iterator.next();
+
+            if (count == index) {
+                return e;
+            }
+
+            count++;
+        }
+        return null;
     }
 }

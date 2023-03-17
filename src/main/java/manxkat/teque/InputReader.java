@@ -10,7 +10,16 @@ public class InputReader extends BufferedReader {
     super(new InputStreamReader(inputStream));
   }
 
-  public String[] splitNext() {
+  public int readInt() {
+    try {
+      return Integer.parseInt(this.readLine());
+    } catch (NumberFormatException | IOException e) {
+      e.printStackTrace();
+      return 0;
+    }
+  }
+
+  public String[] splitLine() {
     try {
       return this.readLine().split(" ");
     } catch (IOException e) {
