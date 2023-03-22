@@ -1,10 +1,15 @@
 package manxkat.teque;
 
-import java.util.Deque;
+public interface Teque<E> {
 
-public interface Teque<E> extends Deque<E> {
+    void addFirst(E e);
 
     void addMiddle(E e);
+
+    void addLast(E e);
+
     E get(int index);
+
+    int size();
 
 }
