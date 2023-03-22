@@ -4,14 +4,13 @@ public class Main {
 
     public static void main(String[] args) {
         InputReader reader = new InputReader(System.in);
-        readCommands(reader);
+        buildTeque(reader);
     }
 
-    public static void readCommands(InputReader reader) {
+    public static void buildTeque(InputReader reader) {
         int commands = reader.readInt();
         
-        Teque<String> teque = new ArrayTeque<>();
-        
+        Teque<String> teque = new TequeList<>();
 
         for(int i = 0; i < commands; i++) {
             String[] splitLine = reader.splitLine();

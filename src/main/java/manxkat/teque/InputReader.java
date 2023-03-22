@@ -6,6 +6,7 @@ import java.io.InputStream;
 import java.io.InputStreamReader;
 
 public class InputReader extends BufferedReader {
+
   public InputReader(InputStream inputStream) {
     super(new InputStreamReader(inputStream));
   }
@@ -27,4 +28,5 @@ public class InputReader extends BufferedReader {
       return new String[0];
     }
   }
+  
 }
