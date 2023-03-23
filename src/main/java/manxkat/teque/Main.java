@@ -3,19 +3,20 @@ package manxkat.teque;
 public class Main {
 
     public static void main(String[] args) {
-        InputReader reader = new InputReader(System.in);
-        buildTeque(reader);
+        Kattio io = new Kattio(System.in, System.out);
+        buildTequeFromInput(io);
     }
 
-    public static void buildTeque(InputReader reader) {
-        int commands = reader.readInt();
+    public static void buildTequeFromInput(Kattio io) {
+        Teque<Integer> teque = new TequeList<>();
         
-        Teque<String> teque = new TequeList<>();
+        int commands = io.getInt();
 
         for(int i = 0; i < commands; i++) {
-            String[] splitLine = reader.splitLine();
-            Commands command = Commands.valueOf(splitLine[0].toUpperCase());
-            String value = splitLine[1];
+
+            String word = io.getWord();
+            Commands command = Commands.valueOf(word.toUpperCase());
+            int value = io.getInt();            
 
             switch (command) {
                 case PUSH_FRONT:
@@ -31,11 +32,12 @@ public class Main {
                     break;
 
                 case GET:
-                    System.out.println(teque.get(Integer.valueOf(value)));
+                    io.println(teque.get(value));
                     break;
             }
         }
-        
+
+        io.close();
     }
 
 }
