@@ -11,4 +11,4 @@
 |[Solving for Carrots](https://open.kattis.com/problems/carrots)    |Easy      |✅|
 |[Coldputer Science](https://open.kattis.com/problems/cold)         |Easy      |✅|
 |[Compact Disc](https://open.kattis.com/problems/cd)                |Medium    |✅|
-|[Teque](https://open.kattis.com/problems/teque)                    |Medium    |❌|
+|[Teque](https://open.kattis.com/problems/teque)                    |Medium    |✅|
