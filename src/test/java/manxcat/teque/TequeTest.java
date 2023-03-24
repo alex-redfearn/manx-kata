@@ -4,14 +4,14 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import manxkat.teque.TequeList;
+import manxkat.teque.Teque;
 
 public class TequeTest {
 
     @Test
     public void givenTequeOfLengthTwo_whenAddMiddle_thenItemAddedAtIndexOne() {
         // GIVEN
-        TequeList<Integer> teque = new TequeList<>();
+        Teque<Integer> teque = new Teque<>();
         teque.addFirst(1);
         teque.addLast(3);
 
@@ -25,7 +25,7 @@ public class TequeTest {
     @Test
     public void givenTequeOfLengthEleven_whenAddMiddle_thenItemAddedAtIndexSix() {
         // GIVEN
-        TequeList<Integer> teque = new TequeList<>();
+        Teque<Integer> teque = new Teque<>();
 
         // WHEN
         teque.addLast(9);
@@ -42,4 +42,5 @@ public class TequeTest {
         assertEquals(5, teque.get(1));
         assertEquals(1, teque.get(2));
     }
+
 }
