@@ -8,7 +8,7 @@ public class Main {
     }
 
     public static void buildTequeFromInput(Kattio io) {
-        Teque<Integer> teque = new TequeList<>();
+        Teque<Integer> teque = new Teque<>();
         
         int commands = io.getInt();
 
