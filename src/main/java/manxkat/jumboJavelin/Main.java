@@ -1,4 +1,4 @@
-package manxkat.jumboJavelin;
+package manxkat.jumbojavelin;
 
 public class Main {
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package manxkat.jumboJavelin;
+package manxkat.jumbojavelin;
 
 public class Javelin {
   private int length;
