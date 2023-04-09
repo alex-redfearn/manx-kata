@@ -1,5 +1,7 @@
 package manxkat.teque;
 
+import manxkat.io.Kattio;
+
 public class Main {
 
     public static void main(String[] args) {

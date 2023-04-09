@@ -1,4 +1,4 @@
-package manxkat.coldPuterScience;
+package manxkat.coldputerscience;
 
 public class Main {
   public static void main(String[] args) {

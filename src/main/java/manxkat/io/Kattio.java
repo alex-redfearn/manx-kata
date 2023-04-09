@@ -1,4 +1,4 @@
-package manxkat.teque;
+package manxkat.io;
 
 import java.util.StringTokenizer;
 import java.io.BufferedReader;

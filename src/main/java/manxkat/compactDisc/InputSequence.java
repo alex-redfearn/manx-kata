@@ -1,4 +1,4 @@
-package manxkat.compactDisc;
+package manxkat.compactdisc;
 
 import java.io.BufferedReader;
 import java.util.ArrayList;
