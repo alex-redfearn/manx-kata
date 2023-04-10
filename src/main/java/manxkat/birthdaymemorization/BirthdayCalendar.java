@@ -13,19 +13,19 @@ public class BirthdayCalendar {
         birthdayMap = new HashMap<>();
     }
 
-    public void add(LocalDate birthday, String name, int rating) {
-        birthdayMap.put(birthday, new Friend(name, rating));
+    public void add(LocalDate birthday, Friend friend) {
+        birthdayMap.put(birthday, friend);
     }
 
     public Friend get(LocalDate key) {
         return birthdayMap.get(key);
     }
 
-    public void replace(LocalDate key, String name, int rating) {
+    public void replace(LocalDate key, Friend friend) {
         Friend removed = birthdayMap.remove(key);
 
         if (removed != null) {
-            birthdayMap.put(key, new Friend(name, rating));
+            birthdayMap.put(key, friend);
         }
     }
 
