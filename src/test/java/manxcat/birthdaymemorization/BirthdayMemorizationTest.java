@@ -21,7 +21,7 @@ public class BirthdayMemorizationTest {
         LocalDate birthday = LocalDate.now();
         String name = "Alex";
         int rating = 1;
-        calendar.add(birthday, name, rating);
+        calendar.add(birthday, new Friend(name, rating));
 
         // THEN
         assertEquals("Alex", calendar.get(birthday).getName(), "Calendar should contain birthday for Alex.");
@@ -35,10 +35,10 @@ public class BirthdayMemorizationTest {
         LocalDate birthday = LocalDate.now();
         String name = "Alex";
         int rating = 2;
-        calendar.add(birthday, name, rating);
+        calendar.add(birthday, new Friend(name, rating));
 
         // WHEN
-        calendar.replace(birthday, "Kevin", 1);
+        calendar.replace(birthday, new Friend("Kevin", 1));
 
         // THEN
         assertEquals("Kevin", calendar.get(birthday).getName(), "Calendar should contain birthday for Kevin.");
@@ -48,9 +48,9 @@ public class BirthdayMemorizationTest {
         // GIVEN
         BirthdayCalendar calendar = new BirthdayCalendar();
         LocalDate now = LocalDate.now();
-        calendar.add(now, "Alex", 1);
-        calendar.add(now.plusDays(1), "Kevin", 1);
-        calendar.add(now.plusDays(2), "Peter", 1);
+        calendar.add(now, new Friend("Alex", 1));
+        calendar.add(now.plusDays(1), new Friend("Kevin", 1));
+        calendar.add(now.plusDays(2), new Friend("Peter", 1));
 
         // WHEN
         Collection<Friend> birthdays = calendar.values();

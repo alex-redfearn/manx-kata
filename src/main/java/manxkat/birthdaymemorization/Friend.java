@@ -1,6 +1,8 @@
 package manxkat.birthdaymemorization;
 
-public class Friend implements Comparable<Friend> {
+import java.util.Comparator;
+
+public class Friend {
     
     private final String name;
     private final int rating;
@@ -18,8 +20,16 @@ public class Friend implements Comparable<Friend> {
         return this.rating;
     }
 
-	@Override
-	public int compareTo(Friend o) {
-		return this.name.compareTo(o.name);
-	}
+    static final Comparator<Friend> NAME = new Comparator<Friend>() {
+        public int compare(Friend f1, Friend f2) {
+            return f1.getName().compareTo(f2.getName());
+        }
+    };
+
+    static final Comparator<Friend> RATING = new Comparator<Friend>() {
+        public int compare(Friend f1, Friend f2) {
+            return Integer.compare(f1.getRating(), f2.getRating());
+        }
+    };
+    
 }
