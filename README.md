@@ -5,13 +5,14 @@
 [Kattis](https://open.kattis.com/) is a programming problem archive. Problems are categorised into easy, medium, and hard. In this repo you'll find all of the kata's I've completed using Java. You can find my kattis account here [alex redfearn](https://open.kattis.com/users/alex-redfearn).
 
 ## Completed Kata's (Java)
-|Kata                                                               |Difficulty|Problem Report                         |Accepted|
-| :-----------------------------------------------------------------| :------- |:--------------------------------------|:-------|
-|[Jumbo Javelin](https://open.kattis.com/problems/jumbojavelin)     |Easy      |[Jumbo Javelin](#jumbo-javelin)        |✅|
-|[Carrots](https://open.kattis.com/problems/carrots)                |Easy      |[Carrots](#carrots)                    |✅|
-|[Coldputer Science](https://open.kattis.com/problems/cold)         |Easy      |[Coldputer Science](#coldputer-science)|✅|
-|[Compact Disc](https://open.kattis.com/problems/cd)                |Medium    |[Compact Disc](#compact-disc)          |✅|
-|[Teque](https://open.kattis.com/problems/teque)                    |Medium    |[Teque](#teque)                        |✅|
+|Kata                                                                               |Difficulty     |Problem Report                           |Accepted|
+| :-----------------------------------------------------------------                | :------------ |:--------------------------------------  |:-------|
+|[Jumbo Javelin](https://open.kattis.com/problems/jumbojavelin)                     |Easy           |[Jumbo Javelin](#jumbo-javelin)          |✅|
+|[Carrots](https://open.kattis.com/problems/carrots)                                |Easy           |[Carrots](#carrots)                      |✅|
+|[Coldputer Science](https://open.kattis.com/problems/cold)                         |Easy           |[Coldputer Science](#coldputer-science)  |✅|
+|[Birthday Memorization](https://open.kattis.com/problems/fodelsedagsmemorisering)  |Easy           |[Birthday Memorization](#birthday-memorization)|✅|
+|[Compact Disc](https://open.kattis.com/problems/cd)                                |Medium         |[Compact Disc](#compact-disc)            |✅|
+|[Teque](https://open.kattis.com/problems/teque)                                    |Medium         |[Teque](#teque)                          |✅|
 
 ## Problem Report
 
