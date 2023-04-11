@@ -6,7 +6,7 @@
 
 ## Completed Kata's (Java)
 |Kata                                                                               |Difficulty     |Problem Report                           |Accepted|
-| :-----------------------------------------------------------------                | :------------ |:--------------------------------------  |:-------|
+| :---------------------------------------------------------------------------------|:--------------|:-------------------------------------- -|:-------|
 |[Jumbo Javelin](https://open.kattis.com/problems/jumbojavelin)                     |Easy           |[Jumbo Javelin](#jumbo-javelin)          |✅|
 |[Carrots](https://open.kattis.com/problems/carrots)                                |Easy           |[Carrots](#carrots)                      |✅|
 |[Coldputer Science](https://open.kattis.com/problems/cold)                         |Easy           |[Coldputer Science](#coldputer-science)  |✅|
@@ -24,6 +24,9 @@ Super easy, not a very fun one.
 
 ### Coldputer Science
 Loop to count negative numbers, kinda fun.
+
+### Birthday Memorization
+A slighty more involved easy one. The task was to store friends birthdays in a calendar. I used a map for this, birthday as the key. If two friends had the same birthday then the friends rating was used to decide which birthday to store. I had fun writing two simple functional interfaces that implement Comparator and could be passed to a lambda expression e.g. stream().sorted(Comparator).
 
 ### Compact Disc
 The first time I learnt that java.util.Scanner is too slow for io operations, started using java.io.BufferedReader. The challenge was to output the number of duplicate values in two lists. Extracted the two sequences into two sets and then used java.util.set.retainAll().
