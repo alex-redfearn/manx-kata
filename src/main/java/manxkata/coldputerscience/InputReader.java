@@ -1,4 +1,4 @@
-package manxkat.coldputerscience;
+package manxkata.coldputerscience;
 
 import java.io.BufferedReader;
 import java.io.IOException;

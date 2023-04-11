@@ -1,4 +1,4 @@
-package manxkat.carrots;
+package manxkata.carrots;
 
 import java.io.InputStream;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package manxkat.carrots;
+package manxkata.carrots;
 
 public class Contestant {
   private final String name;

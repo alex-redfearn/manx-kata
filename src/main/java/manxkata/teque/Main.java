@@ -1,6 +1,6 @@
-package manxkat.teque;
+package manxkata.teque;
 
-import manxkat.io.Kattio;
+import manxkata.io.Kattio;
 
 public class Main {
 

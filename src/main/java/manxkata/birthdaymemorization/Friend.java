@@ -1,4 +1,4 @@
-package manxkat.birthdaymemorization;
+package manxkata.birthdaymemorization;
 
 import java.util.Comparator;
 

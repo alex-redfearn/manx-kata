@@ -1,4 +1,4 @@
-package manxkat.carrots;
+package manxkata.carrots;
 
 public class Main {
   public static void main(String[] args) {

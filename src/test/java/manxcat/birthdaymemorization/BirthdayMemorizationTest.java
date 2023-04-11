@@ -7,8 +7,8 @@ import java.util.Collection;
 
 import org.junit.jupiter.api.Test;
 
-import manxkat.birthdaymemorization.BirthdayCalendar;
-import manxkat.birthdaymemorization.Friend;
+import manxkata.birthdaymemorization.BirthdayCalendar;
+import manxkata.birthdaymemorization.Friend;
 
 public class BirthdayMemorizationTest {
     

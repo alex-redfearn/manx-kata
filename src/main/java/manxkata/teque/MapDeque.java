@@ -1,4 +1,4 @@
-package manxkat.teque;
+package manxkata.teque;
 
 import java.util.HashMap;
 

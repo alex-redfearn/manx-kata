@@ -1,4 +1,4 @@
-package manxkat.compactdisc;
+package manxkata.compactdisc;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

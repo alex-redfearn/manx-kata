@@ -4,7 +4,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.Test;
 
-import manxkat.teque.Teque;
+import manxkata.teque.Teque;
 
 public class TequeTest {
 

@@ -1,4 +1,4 @@
-package manxkat.coldputerscience;
+package manxkata.coldputerscience;
 
 public class WeatherService {
   private int temperatureCount;

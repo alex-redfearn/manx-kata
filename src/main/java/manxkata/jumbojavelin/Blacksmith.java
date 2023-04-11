@@ -1,4 +1,4 @@
-package manxkat.jumbojavelin;
+package manxkata.jumbojavelin;
 
 import java.io.InputStream;
 import java.util.Scanner;

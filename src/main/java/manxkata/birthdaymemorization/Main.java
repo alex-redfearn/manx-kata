@@ -1,9 +1,9 @@
-package manxkat.birthdaymemorization;
+package manxkata.birthdaymemorization;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 
-import manxkat.io.Kattio;
+import manxkata.io.Kattio;
 
 public class Main {
 

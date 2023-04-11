@@ -1,4 +1,4 @@
-package manxkat.teque;
+package manxkata.teque;
 
 public class Teque<E> {
 
