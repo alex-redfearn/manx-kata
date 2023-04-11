@@ -6,7 +6,7 @@
 
 ## Completed Kata's (Java)
 |Kata                                                                               |Difficulty     |Problem Report                           |Accepted|
-| :---------------------------------------------------------------------------------|:--------------|:-------------------------------------- -|:-------|
+|:----------------------------------------------------------------------------------|:--------------|:--------------------------------------- |:-------|
 |[Jumbo Javelin](https://open.kattis.com/problems/jumbojavelin)                     |Easy           |[Jumbo Javelin](#jumbo-javelin)          |✅|
 |[Carrots](https://open.kattis.com/problems/carrots)                                |Easy           |[Carrots](#carrots)                      |✅|
 |[Coldputer Science](https://open.kattis.com/problems/cold)                         |Easy           |[Coldputer Science](#coldputer-science)  |✅|
